@@ -4,7 +4,7 @@
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 {{ 'Company' }}
             </h2>
-            <a href="{{ route('companies.create') }}" class="bg-blue-500 text-green-600 px-4 py-2 rounded-md">ADD</a>
+            <a href="{{ route('companies.create') }}" class="bg-gray-100 text-white-600 px-4 py-2 rounded-md">ADD</a>
         </div>
     </x-slot>
 
