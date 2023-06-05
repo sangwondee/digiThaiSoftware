@@ -28,7 +28,7 @@ class CompanyController extends Controller
     {
         $validated = $request->validated();
 
-        // Refactor
+        // TODO:: Refactor
         if ($request->hasFile('logo')) {
             $filePath = Storage::disk('public')->put('images/companies/logo', request()->file('logo'));
             $validated['logo'] = $filePath;
@@ -61,11 +61,12 @@ class CompanyController extends Controller
     {
         $validated = $request->validated();
 
+        // TODO:: Refactor
         if ($request->hasFile('logo')) {
             Storage::disk('public')->delete($company->logo);
         }
 
-        // Refactor
+        // TODO:: Refactor
         $filePath = Storage::disk('public')->put('images/companies/logo', request()->file('logo'));
         $validated['logo'] = $filePath;
 
