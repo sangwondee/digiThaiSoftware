@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\Email\EmailNewCompanyController;
-use App\Mail\SendEmailCreateCompany;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ProfileController;

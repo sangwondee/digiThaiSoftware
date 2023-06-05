@@ -39,7 +39,6 @@ class CompanyController extends Controller
         Mail::to('testreceiver@gmail.com’')->send(new SendEmailCreateCompany());
 
         if($company) {
-            // add flash for the success notification
             session()->flash('notif.success', 'Company created successfully!');
 
             return redirect()->route('companies.index', [$company]);
